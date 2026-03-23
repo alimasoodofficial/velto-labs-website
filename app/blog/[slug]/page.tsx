@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   title: "Blog Post | Velto Labs",
 };
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   
   return (
     <Layout>

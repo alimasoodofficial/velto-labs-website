@@ -1,3 +1,5 @@
+'use client';
+
 import { motion } from "framer-motion";
 
 // Services page - Network/nodes illustration (Modernized)
